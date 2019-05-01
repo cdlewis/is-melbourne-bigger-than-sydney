@@ -1,12 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
 import styled from "@emotion/styled"
-import GrowthChart from "./growth-chart"
-import GrowthChartLegend from "./growth-chart-legend"
-import OtherOptions from "./other-options"
+import GrowthChart from "../components/growth-chart"
+import GrowthChartLegend from "../components/growth-chart-legend"
+import OtherOptions from "../components/other-options"
+import SEO from "../components/seo"
 
 const Answer = styled.span`
   color: #f67019;
@@ -33,13 +31,17 @@ const IndexPage = () => {
 
   return (
     <Layout>
+      <SEO />
       <Title>
         Is Melbourne bigger than Sydney yet? <Answer>No</Answer>
       </Title>
       <BodyText>
         We all know Melbourne is better than Sydney. Population trends also
         reflect this fact. Within the next twenty years Melbourne is projected
-        to overtake Sydney and become Australia's biggest/best city 🎉
+        to overtake Sydney and become Australia's biggest/best city{" "}
+        <span role="img" aria-label="party emoji">
+          🎉
+        </span>
       </BodyText>
       <ChartWrapper>
         <GrowthChartLegend />

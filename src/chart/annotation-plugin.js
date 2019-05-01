@@ -5,11 +5,11 @@ const getImageCoords = model => [model.x - 25, model.y + 10]
 const getTextCoords = model => [model.x - 30, model.y + 52 + 20]
 
 export default function useAnnotationPlugin(Chart, assetRef) {
-  if (!Chart) {
-    return
-  }
-
   useEffect(() => {
+    if (!Chart) {
+      return
+    }
+
     let imgX = null
     let imgY = null
     let textX = null
@@ -75,5 +75,6 @@ export default function useAnnotationPlugin(Chart, assetRef) {
         })
       },
     })
+    // eslint-disable-next-line
   }, [])
 }

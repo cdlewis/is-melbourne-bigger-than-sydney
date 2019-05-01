@@ -187,7 +187,7 @@ export default ({ projection }) => {
   return (
     <>
       <canvas ref={canvasRef} />
-      <img src={arrowAsset} ref={arrowRef} style={{ display: "none" }} />
+      <img src={arrowAsset} ref={arrowRef} style={{ display: "none" }} alt="" />
     </>
   )
 }

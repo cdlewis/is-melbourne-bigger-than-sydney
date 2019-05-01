@@ -65,7 +65,11 @@ export default function OtherOptions({ projection, setProjection }) {
           checked={projection === "A"}
         />
         <OptionWrapper for="optionA">
-          <Icon>🚀</Icon>
+          <Icon>
+            <span role="img" aria-label="rocket emoji">
+              🚀
+            </span>
+          </Icon>
           <Title>Higher Growth</Title>
           <Text>
             A more optimistic forecast, which assumes more favourable growth
@@ -81,7 +85,11 @@ export default function OtherOptions({ projection, setProjection }) {
           checked={projection === "B"}
         />
         <OptionWrapper for="optionB">
-          <Icon>🤷</Icon>
+          <Icon>
+            <span role="img" aria-label="shrug emoji">
+              🤷
+            </span>
+          </Icon>
           <Title>Current Growth</Title>
           <Text>
             A more optimistic forecast, which assumes more favourable growth
@@ -97,7 +105,11 @@ export default function OtherOptions({ projection, setProjection }) {
           checked={projection === "C"}
         />
         <OptionWrapper for="optionC">
-          <Icon>🐢</Icon>
+          <Icon>
+            <span role="img" aria-label="turtle emoji">
+              🐢
+            </span>
+          </Icon>
           <Title>Slower Growth</Title>
           <Text>
             A more optimistic forecast, which assumes more favourable growth
