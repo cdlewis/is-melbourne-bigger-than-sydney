@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "@emotion/styled"
-import "./layout.css"
 
 const Wrapper = styled.div`
   font-family: "Montserrat", sans-serif;

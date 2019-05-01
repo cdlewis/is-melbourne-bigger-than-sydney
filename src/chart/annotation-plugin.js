@@ -12,8 +12,12 @@ export default function useAnnotationPlugin(Chart, assetRef) {
 
     let imgX = null
     let imgY = null
+    let targetImgX = null
+    let targetImgY = null
     let textX = null
     let textY = null
+    let targetTextX = null
+    let targetTextY = null
 
     Chart.defaults.global.defaultFontFamily = "'Montserrat', sans-serif"
 
@@ -44,6 +48,19 @@ export default function useAnnotationPlugin(Chart, assetRef) {
                 imgY = newImgY
                 textX = newTextX
                 textY = newTextY
+              }
+
+              // Answer to the question: what happens if need to change direction half-way through
+              // an animation?
+              if (newImgX !== targetImgX) {
+                imgX = targetImgX
+                imgY = targetImgY
+                textX = targetTextX
+                textY = targetTextY
+                targetImgX = newImgX
+                targetImgY = newImgY
+                targetTextX = newTextX
+                targetTextY = newTextY
               }
 
               if (newImgX !== imgX || newImgY !== imgY) {
