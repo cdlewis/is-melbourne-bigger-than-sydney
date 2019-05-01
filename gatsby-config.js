@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: 'is-melbourne-bigger-than-sydney',
   plugins: [
     {
       resolve: "gatsby-plugin-web-font-loader",
