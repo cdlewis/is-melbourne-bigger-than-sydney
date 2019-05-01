@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "name": "is-melbourne-bigger-than-sydney",
+  "private": false,
+  "description": "",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Chris Lewis",
   "dependencies": {
     "chart.js": "^2.8.0",
     "gatsby": "^2.3.32",
@@ -45,7 +45,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build --prefix-paths",
+    "build": "rm -rf docs && gatsby build --prefix-paths && mv public docs",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
