@@ -9,6 +9,11 @@ const Wrapper = styled.div`
   font-family: "Montserrat", sans-serif;
   display: flex;
   justify-content: center;
+  margin: 40px 50px;
+`
+
+const Content = styled.main`
+  max-width: 1000px;
 `
 
 const Layout = ({ children }) => (
@@ -24,7 +29,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <Wrapper>
-        <main>{children}</main>
+        <Content>{children}</Content>
       </Wrapper>
     )}
   />
